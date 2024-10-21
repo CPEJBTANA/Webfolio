@@ -1,0 +1,83 @@
+.Gallery {
+  width: 100%;
+  height: auto;
+  // outline: 2px solid blue;
+  flex-direction: column;
+  display: flex;
+}
+
+.GHeader {
+  width: 100%;
+  height: 20%;
+  //outline: 2px solid rgb(146, 143, 143);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: left;
+  font-size: 6.5em;
+  font-family: "Odibee Sans", sans-serif;
+  letter-spacing: 10px;
+
+  @media screen and (max-width: 700px) {
+    font-size: 4em;
+    justify-content: center;
+  }
+}
+
+.VideoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.VideoContainer video {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .photo-gallery {
+    flex-direction: column;
+  }
+}
+
+.see-more {
+  text-align: center;
+  margin-top: 20px;
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 25px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+}
